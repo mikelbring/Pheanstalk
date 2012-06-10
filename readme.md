@@ -1,6 +1,6 @@
 # Pheanstalk for Laravel #
 
-Simple wrapper for [Pheanstalk](https://github.com/pda/pheanstalk)
+Simple wrapper for [Pheanstalk](https://github.com/pda/pheanstalk). Added static and dynamic loading.
 
 ## Installation ##
 
@@ -21,8 +21,8 @@ Pheanstalk::connection()
   ->useTube('testtube')
   ->put("job payload goes here\n");
 
-  // Or dynamically load the default connection
-  Pheanstalk::useTube('testtube')->put("job payload goes here\n");
+// Or dynamically load the default connection
+Pheanstalk::useTube('testtube')->put("job payload goes here\n");
 
 // ----------------------------------------
 // worker (performs jobs)
