@@ -9,9 +9,6 @@ Copy the config file to `application/config/pheanstalk.php` and update with your
 ## Usage ##
 
 ```php
-<?php
-
-$pheanstalk = 
 
 // ----------------------------------------
 // producer (queues jobs)
